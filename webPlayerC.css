@@ -1,0 +1,544 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.d-auto {
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+#outerDiv > * {
+    height: 100%;
+}
+
+#outerDiv {
+    position: relative;
+    flex: 1;
+}
+
+#aside1 {
+    flex-grow: 1;
+    background-color: black;
+    /* position: absolute; */
+    /* position: absolute; */
+    
+}
+
+#imp {
+    margin-bottom: 6rem;
+    /* border-bottom: 1px solid gray; */
+    padding-bottom: 3rem;
+    /* border-image: linear-gradient(to left, gray 70%, transparent 50%) 100% 1;
+    border-image: linear-gradient(to right, gray 70%, transparent 50%) 100% 1; */
+}
+#main {
+    flex-grow: 5;
+    /* background:linear-gradient(#1db954, #191414); */
+    background: linear-gradient(black,#0e390e);
+    /* background: white !important; */
+
+}
+#logo {
+    margin-bottom: 5rem;
+    margin-left: -2rem;
+    margin-top: 2rem;
+}
+
+#aside1 i {
+    color: lightgray;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    margin: 1rem;
+    margin-left: 4rem;
+    margin-right: -15rem;
+    /* height: 100px;
+    width: 100px; */
+}
+
+#aside1 i:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+#aside1 i span {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: lightgray;
+    transition: 0.2s ease-in-out;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* #aside1 i span:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+
+} */
+
+.identify:hover {
+    color: white;
+    opacity: 1;
+}
+
+#logo i {
+    font-size: 3rem;
+    color: white;
+}
+
+#logo i span {
+    font-size: 2rem;
+    color: white;
+    opacity: 1;
+}
+
+/* #mostPlayed div {
+    background-color: lightpink;
+    height: 100px;
+    width: 300px;
+} */
+.content {
+    flex-grow: 0.5;
+    background:linear-gradient(#1db954, #191414);
+    margin-left: 0rem;
+    overflow-y: scroll;
+    max-height: calc(100vh - 100px);
+}
+
+.card {
+    width: 180px;
+    height: 260px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0 10px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    /* background-color: #181818; */
+    
+    background-color: #282828 !important;
+    color: gray;
+    justify-content: space-around;
+    margin: 2rem;
+    margin-left: 2rem;
+   
+
+}
+.cardsSuperior {
+    /* margin-left: 5rem; */
+    justify-content: space-around;
+    
+}
+
+.card:hover {
+    background-color: #181818 !important;
+    
+}
+
+.card .img {
+    width: 100%;
+    height: 144px;
+    position: relative;
+}
+
+.card .img img {
+    width: 100%;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.card:hover .img button {
+transform: translatey(-8px);
+opacity: 1;
+}
+
+.card .text {
+    color: #fff;
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.card .img button {
+    background-color: #1db954;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    border: 0;
+    align-items: center;
+    bottom: 0px;
+    border-radius: 50%;
+    font-size: 8px;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card .text h2 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+.card .text p {
+    color: lightgray;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 16px;
+}
+
+#jump h1 {
+    color: white;
+    /* font-family: 'Sawarabi Gothic', sans-serif; */
+    font-weight: bold;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: -0.7rem;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider img{
+    height: 100vh;
+    width: 100vw;
+}
+
+.slider {
+    position: relative;
+}
+.slider .down {
+    position: absolute;
+    margin-left: 43rem;
+    z-index: 10;
+    font-size: 50px;
+    transform: rotate(90deg);
+    margin-top: 47.5rem;
+    color: black;
+    /* opacity: 0.6; */
+}
+.slider .down a{
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    scroll-behavior: smooth;
+
+}
+.slider .down a:hover{
+    opacity: 1;
+    text-decoration: none;
+
+}
+
+.quote h5 {
+    color: white;
+    margin-top: 2rem;
+    margin-left: 3rem;
+
+}
+
+.bgOnly {
+    width: 70%;
+    border-bottom: 1.5px solid gray;
+    margin-left: 2.8rem;
+    margin-top: -7rem;
+}
+
+#footer {
+
+    background-color: #181818;
+    width: 100vw;
+    height: 100px;
+    z-index: 50;
+    border-top: 2px solid black;
+}
+
+#outerDiv {
+    position: relative;
+}
+
+.img-contain {
+    margin: 1rem;
+}
+
+.foot-text {
+    margin-top: 1.5rem;
+    margin-left: -21rem;
+}
+
+.foot-text h4 {
+    margin-bottom: -0.05rem;
+    color: white;
+}
+
+.foot-text h6 {
+    margin-top: -0rem;
+    color: white;
+    opacity: 0.8;
+}
+
+.like-btn i {
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    /* transition: 1s ease-in-out; */
+    
+
+}
+
+.main-btns i:active {
+    transform: scale(0.8);
+}
+
+
+.main-btns i {
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.main-btns {
+    margin-left: 15rem;
+}
+
+.slider-imp {
+    margin-left: 9rem;
+    margin-bottom: -0.3rem;
+    margin-top: -0.18rem;
+}
+
+.slider-imp input{
+    width: 30rem;
+    cursor: pointer;
+    height: 2px;
+}
+
+.slider-section {
+    margin-left: 2rem;
+    margin-right: -5rem;
+    margin-top: 0.6rem;
+}
+
+
+/* .duration span {
+    color: red;
+    margin-bottom: 100px;
+    font-size: 12px;
+}
+
+.duration .current-time {
+    margin-left: 8.4rem;
+    
+
+} */
+
+/* .duration .song-duration {
+    margin-left: 27rem;
+    margin-right: 25rem;
+    margin-top: -19rem;
+} */
+
+.volume {
+    margin-left: 20rem;
+    margin-top: 2.76rem;
+    margin-right: 2rem;
+}
+
+.volume i {
+    color: white;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-top: 0.04rem;
+}
+
+.volume input {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    height: 2px;
+}
+
+/* .seek-bar::-webkit-slider-thumb,
+.volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+  color: red;
+
+} */
+
+.foot-text > *{
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin-left: 6.6rem;
+}
+
+#overall {
+    height: 100vh !important;
+
+}
+
+.cardsSuperior2 {
+    justify-content: space-around;
+}
+
+.card2 {
+    width: 360px;
+    height: 110px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* padding: 1rem; */
+    margin: 0 10px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    /* background-color: #181818; */
+    
+    background-color: #2C2C2D;
+    color: gray;
+    justify-content: space-around;
+    margin: 2rem;
+    margin-left: 2rem;
+    border: 1px solid black;
+
+}
+
+.card2 .img2 {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    margin-left: -5.4rem;
+    /* margin-right: 17rem; */
+}
+
+.card2 .text2 {
+    position: relative;
+    
+}
+.card2 .img2 img {
+    width: 100%;
+    border-radius: 2px;
+    height: 100%;
+    
+}
+
+.card2 .text2 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+.card2 .text2 button {
+    background-color: #1db954;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    right: -3rem;
+    
+    /* right: -0.3rem; */
+    border: 0;
+    align-items: center;
+    bottom: 0px;
+    border-radius: 50%;
+    font-size: 11px;
+    height: 0px;
+    width: 0px;
+    color: black;
+    opacity: 0;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+
+}
+
+.card2 .text2 button i {
+    font-size: 15px;
+    margin-left: 0.15rem;
+
+}
+
+.card2 .text2 h2 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 24px;
+    color: white;
+    margin-left: -10rem;
+    margin-top: 2.7rem;
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    width: 9rem;
+
+}
+
+.card2:hover {
+    background-color: #424040;
+}
+
+.card2:hover .text2 button {
+    opacity: 1;
+    height: 50px;
+    width: 50px;
+
+}
+
+#footer .img-contain img {
+    height: 100%;
+    width: 130%;
+}
+
+#otherTwo {
+    margin-left: 15rem;
+    opacity: 0;
+}
+
+#img-contain {
+    opacity: 0;
+}
+
+.card:hover .content {
+    background: linear-gradient(black,#ffcc70);
+}
